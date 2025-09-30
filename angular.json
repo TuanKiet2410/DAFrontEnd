@@ -21,8 +21,17 @@
                 "input": "public"
               }
             ],
+            "scripts": [
+                        "./node_modules/bootstrap/dist/js/vechungtoi.js",
+                        "./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+                                
+          ],
+
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
+              
             ],
             "server": "src/main.server.ts",
             "outputMode": "server",
@@ -86,5 +95,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

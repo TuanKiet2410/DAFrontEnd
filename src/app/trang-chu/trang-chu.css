@@ -1,0 +1,67 @@
+.main2{
+    background-color: rgb(26, 176, 161);
+  color: white;
+  position: relative;
+  padding: 60px 20px;
+border-radius: 10px;
+}
+.arrow-box {
+  display: flex;               /* Cho các phần tử (text, time) nằm ngang */
+  justify-content: space-between; /* Căn text bên trái, số giờ bên phải */
+  align-items: center;         /* Căn giữa theo chiều dọc */
+  width: 420px;                /* Độ rộng của khung */
+  padding: 15px 20px;          /* Khoảng cách bên trong */
+  margin: 15px 0;              /* Cách nhau giữa các khung */
+  font-family: sans-serif;     /* Font chữ */
+  font-weight: bold;           /* Chữ đậm */
+  position: relative;          /* Quan trọng để tạo mũi tên bằng ::after */
+  border-radius: 0px;          /* Bo nhẹ góc khung */
+}
+.arrow-box::after {
+  content: "";                 /* Bắt buộc để tạo hình */
+  position: absolute;          /* Đặt tuyệt đối theo khung cha */
+  right: -20px;                /* Đẩy ra ngoài bên phải */
+  top: 0;                      /* Căn sát trên */
+  width: 0;
+  height: 0;
+  border-top: 39px solid transparent;   /* Nửa tam giác trên (trong suốt) */
+  border-bottom: 38px solid transparent;/* Nửa tam giác dưới (trong suốt) */
+  border-left: 20px solid;              /* Tạo tam giác bên trái (màu sẽ set riêng) */
+}
+.arrow-box .time {
+  border-radius: 50%;          /* Biến thành hình tròn */
+  width: 45px;
+  height: 45px;
+  display: flex;               /* Căn chữ giữa vòng tròn */
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+.arrow-box.red {
+  background: #e53935;   /* Nền đỏ */
+  color: #fff;           /* Chữ trắng */
+}
+.arrow-box.red::after {
+  border-left-color: #e53935;  /* Mũi tên đỏ */
+}
+.arrow-box.red .time {
+  background: #fff;      /* Vòng tròn trắng */
+  color: #e53935;        /* Số giờ màu đỏ */
+}
+.arrow-box.white {
+  background: #fff;      /* Nền trắng */
+  border: 1px solid #ddd;
+  color: #000;           /* Chữ đen */
+}
+.arrow-box.white::after {
+  border-left-color: #fff; /* Mũi tên trắng */
+}
+.arrow-box.white .time {
+  background: #e53935;   /* Vòng tròn đỏ */
+  color: #fff;           /* Số giờ trắng */
+}
+.carousel-item img {
+  width: 100%;
+  height: 500px; /* hoặc auto */
+  object-fit: cover;
+}

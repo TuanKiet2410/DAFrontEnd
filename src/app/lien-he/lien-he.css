@@ -1,0 +1,14 @@
+.loan-mau{
+      background: linear-gradient(to bottom, #90fcfc, #26cfec, #00d1f1);
+
+      
+}
+.bag-img{
+   
+  width: 100%;
+  height: 100%;
+  background-size: cover;       /* co giãn để phủ kín */
+  background-position: center;  /* căn giữa ảnh */
+  background-repeat: no-repeat; /* không lặp lại */
+    background-image: url("../../../public/images/lienhe.jpg");
+}
