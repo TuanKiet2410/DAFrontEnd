@@ -1,0 +1,12 @@
+      /* tạo khoảng trống giữa form chồng và phần card */
+      @media (min-width: 768px) {
+        .cards-section {
+          margin-top: 400px; /* khoảng cách để card không bị form đè */
+        }
+      }
+
+      @media (max-width: 767px) {
+        .cards-section {
+          margin-top: 40px;
+        }
+      }

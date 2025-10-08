@@ -39,7 +39,7 @@
         <!-- main 1 -->
         <div class="container  my-3">
             <div class="row">
-                <div class="col">
+                <div class="col col-12 col-lg-4 my-4">
                     <div class="card">
                         <a href="#">
                             <img class="card-img-top" src="images/main1.png" alt="Title" />
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-lg-4 my-4">
                     <div class="card">
                         <a href="#">
                             <img class="card-img-top" src="images/main2.jpg" alt="Title" />
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-12 col-lg-4 my-4">
                     <div class="card">
                         <a href="#">
                             <img class="card-img-top" src="images/main3.jpg" alt="Title" />
@@ -92,30 +92,30 @@
             </div>
         </div>
         <!-- main 2 -->
-        <div class="container my-5">
-            <div class="row g-4">
+        <div class="container my-5 ">
+            <div class="row mt-5 g-4">
                 <!-- cột trái -->
                 <div class="col-12 col-md-6 mt-3 mt-md-0">
 
 
                     <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
+                    <ul class="nav nav-tabs " id="myTab" role="tablist">
+                        <li class="col nav-item" role="presentation">
                             <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
                                 type="button" role="tab" aria-controls="home" aria-selected="true">
-                                <h4>Thành Tích</h4>
+                                <h4 class="">Thành Tích</h4>
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="col nav-item" role="presentation">
                             <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
                                 type="button" role="tab" aria-controls="profile" aria-selected="false">
-                                <h4>Giảng Viên</h4>
+                                <h4 class="">Giảng Viên</h4>
                             </button>
                         </li>
-                        <li class="nav-item" role="presentation">
+                        <li class="col nav-item" role="presentation">
                             <button class="nav-link" id="messages-tab" data-bs-toggle="tab" data-bs-target="#messages"
                                 type="button" role="tab" aria-controls="messages" aria-selected="false">
-                                <h4>Lộ Trình</h4>
+                                <h4 class="">Lộ Trình</h4>
                             </button>
                         </li>
                     </ul>
@@ -177,8 +177,10 @@
                 </div>
 
                 <!-- cột phải -->
-                <div class="col-12 col-md-6">
+                <div class="col my-5 ratio ratio-16x9">
+                    <!-- ratio ratio-16x9: tạo khung tỷ lệ 16:9 responsive -->
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/loYFBhSJlcE"
+                    style="max-width:560px; max-height:315px;"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
@@ -188,9 +190,9 @@
             </div>
         </div>
         <!-- main 3 -->
-        <div name="" class="main2 ">
+        <div name="" class="main2 container">
             <div class="row">
-                <div class="p-3 col">
+                <div class="p-3 col ">
                     <div class="arrow-box red mt-3">
                         <span class="text">Xem trước bài giảng trực tuyến</span>
                         <span class="time">4H</span>
@@ -211,9 +213,11 @@
                         <span class="time">6H</span>
                     </div>
                 </div>
-                <div class="col p-3">
-                    <div class="mt-4">
+                <div class="col p-3 ">
+                    <div class="mt-4 ratio ratio-16x9 " >
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/loYFBhSJlcE"
+                                style="max-width:560px; max-height:315px;"
+
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen>

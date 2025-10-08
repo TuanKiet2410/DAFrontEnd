@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
   styleUrl: './vechungtoi.css'
 })
 export class Vechungtoi {
+  
 }

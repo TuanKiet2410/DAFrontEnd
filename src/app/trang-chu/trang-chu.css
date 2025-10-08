@@ -24,9 +24,9 @@ border-radius: 10px;
   top: 0;                      /* Căn sát trên */
   width: 0;
   height: 0;
-  border-top: 39px solid transparent;   /* Nửa tam giác trên (trong suốt) */
-  border-bottom: 38px solid transparent;/* Nửa tam giác dưới (trong suốt) */
-  border-left: 20px solid;              /* Tạo tam giác bên trái (màu sẽ set riêng) */
+  /* border-top: 39px solid transparent;   Nửa tam giác trên (trong suốt)
+  border-bottom: 38px solid transparent;Nửa tam giác dưới (trong suốt)
+  border-left: 20px solid;              Tạo tam giác bên trái (màu sẽ set riêng) */
 }
 .arrow-box .time {
   border-radius: 50%;          /* Biến thành hình tròn */
@@ -65,3 +65,12 @@ border-radius: 10px;
   height: 500px; /* hoặc auto */
   object-fit: cover;
 }
+.arrow-box {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    font-size: clamp(0.8rem, 2vw, 1.2rem); /* Tự động co giãn theo viewport clamp(min, preferred, max)*/
+    width: clamp(150px, 80vw, 500px);       /* Co giãn theo kích thước màn hình */
+    transition: all 0.3s ease;
+}
+
