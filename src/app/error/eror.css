@@ -1,0 +1,13 @@
+h1 {
+  font-size: 8rem;
+}
+
+a.btn {
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s;
+}
+
+a.btn:hover {
+  transform: scale(1.05);
+}

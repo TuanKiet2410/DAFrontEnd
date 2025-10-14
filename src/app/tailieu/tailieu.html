@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="container mb-5">
+  <div class="d-flex my-2 mt-5 mx-5">
+  <input class="form-control w-100 me-sm-2" name="search" [(ngModel)]="search" type="text" placeholder="Search" />
+  <button class="btn btn-outline-success my-2 my-sm-0" (click)="onSearch()" type="submit">Search</button>
+</div>
+
+<div class="row mb-2 ">
+  <div class="row row-cols-1 row-cols-lg-4 g-5">
+    @for (book of bookService.allBooks(); track $index) {
+    <div class="col col-sm-6 col-md-4 col-lg-3  h-zoom">
+      <a [routerLink]="['/book',book.id]" routerLinkActive="router-link-active" style="text-decoration: none">
+        <div class="card h-100">
+          <img class="card-img-top" src="{{ book.image }}" width="100%"  alt="Title" />
+          <div class="card-body">
+            <h5 class="book-title">{{ book.title }}</h5>
+            <p class="card-text">Tác giả: {{ book.author }}</p>
+            <div class="price">
+              {{ discountPrice(book.price, book.discount).toLocaleString() }} đ
+              <span class="discount-badge">-{{ book.discount }}</span>
+            </div>
+            <div class="old-price">{{ book.price.toLocaleString() }} đ</div>
+            <div class="publish-date">Năm xuất bản: {{ book.publishDate }}</div>
+          </div>
+        </div>
+      </a>
+    </div>
+    }
+  </div>
+</div>
+</div>
+
+</div>

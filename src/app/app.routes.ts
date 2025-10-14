@@ -7,6 +7,9 @@ import { Vechungtoi } from "./vechungtoi/vechungtoi";
 import { Navbar } from "./navbar/navbar";
 import { Footer } from "./footer/footer";
 import { KhoaHoc } from './khoa-hoc/khoa-hoc';
+import { Tailieu } from './tailieu/tailieu';
+import { Bookdetail } from './bookdetail/bookdetail';
+import { Cart } from './cart/cart';
 
 export const routes: Routes = [
   { path: 'error', component: Eror },
@@ -17,7 +20,10 @@ export const routes: Routes = [
   {path:'navbar',component:Navbar},
   {path:'fotter',component:Footer},
   {path:'khoa-hoc', component:KhoaHoc},
+  {path:'tai-lieu', component:Tailieu},
+  {path:'book/:id', component:Bookdetail, title: "Book Detail"},
+  {path:'cart', component:Cart},
   // Route mặc định hoặc các route khác
-  { path: '', redirectTo: '/trang-chu', pathMatch: 'full' },
+  { path: '', redirectTo: '/error', pathMatch: 'full' },
   { path: '**', component: Eror } // bắt tất cả các route không tồn tại
 ];

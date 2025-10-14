@@ -1,0 +1,68 @@
+.about-section {
+  background-color: #3bb9a1; /* Màu xanh tương tự hình */
+  background-repeat: repeat;
+  background-size: contain;
+  color: #fff;
+}
+
+.about-section h2 {
+  font-size: 2rem;
+}
+
+.about-section p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+.about-section .display-6 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.about-section iframe {
+  border: none;
+}
+.quote-section {
+  background-color: #fff;
+}
+
+.quote-box {
+  max-width: 900px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  padding: 40px 60px;
+  position: relative;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.press-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.press-card:hover img {
+  transform: scale(1.05);
+}
+
+.press-section h2 {
+  color: #212529;
+}
+
+.press-section p {
+  font-size: 1rem;
+}
+.tp {
+  height: 50px;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+.tp:hover {
+  background-color: #f8f9fa;
+  border-color: #dc3545;
+}
+

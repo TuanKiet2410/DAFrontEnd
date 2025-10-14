@@ -1,7 +1,8 @@
       /* tạo khoảng trống giữa form chồng và phần card */
       @media (min-width: 768px) {
         .cards-section {
-          margin-top: 400px; /* khoảng cách để card không bị form đè */
+          margin-top: 400px;
+          /* khoảng cách để card không bị form đè */
         }
       }
 
@@ -10,3 +11,98 @@
           margin-top: 40px;
         }
       }
+
+      .highlight-text {
+        text-align: center;
+        font-style: italic;
+        font-weight: 400;
+        /* nhẹ vừa */
+        font-size: 1.1rem;
+        /* to hơn mặc định một chút */
+        line-height: 1.8;
+        /* giãn dòng đẹp */
+        color: #333;
+        /* màu chữ nhã */
+        margin: 2rem auto;
+        /* căn giữa theo chiều ngang */
+        max-width: 800px;
+        /* giới hạn độ rộng để chữ không quá dài */
+      }
+      .image-top {
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  border-top-left-radius: 50% 20px;
+  border-top-right-radius: 50% 20px;
+}
+
+.bg-orange {
+  height: 440px;
+  background-color: #e89036; /* màu cam giống hình của bạn */
+}
+.bg-red {
+  height: 440px;
+  background-color: #d65137; /* màu cam giống hình của bạn */
+}
+.bg-blue {
+  height: 440px;
+  background-color: #5db2ac; /* màu cam giống hình của bạn */
+}
+.bg-green {
+  height: 440px;
+  background-color: #81b64e; /* màu cam giống hình của bạn */
+}
+
+
+
+.card-body p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+.image-wrapper {
+  position: relative;
+}
+
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  color: red;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+}
+
+.text-box {
+  background-color: #49a79e;
+  padding: 30px;
+  border-radius: 10px;
+  color: white;
+  position: relative;
+}
+
+.text-box::before {
+  content: "“";
+  position: absolute;
+  top: -20px;
+  right: 20px;
+  font-size: 80px;
+  opacity: 0.2;
+  color: white;
+}
+.carde{
+  background-color: #49a19b;
+}
+.carousel-inner .container {
+  max-width: 80%;   /* hoặc 85%, tuỳ ý */
+  margin: 0 auto;
+}
+.card-bodyb{
+  height: 150px;
+}
