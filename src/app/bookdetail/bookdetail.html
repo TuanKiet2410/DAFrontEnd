@@ -15,7 +15,7 @@
             <p class="mb-3">Thể loại: </p>
             <h5 class="fw-bold price mb-1">
               {{ discountPrice(bookDetail()!.price, bookDetail()!.discount).toLocaleString() }} đ
-              <span class="discount-badge">-{{ bookDetail()!.discount }}</span>
+              <span class="discount-badge">-{{ bookDetail()!.discount }}%</span>
             </h5>
             <div class="old-price">{{ bookDetail()!.price.toLocaleString() }} đ</div>
             <div class="d-flex mb-4">
@@ -59,7 +59,7 @@
               class="btn btn-primary border border-secondary rounded-pill px-4 py-2" 
              (click)="addToCart()"
             >
-              <i class="bi bi-bag me-2"></i> Add to cart
+              <i class="bi bi-bag me-2"></i> Thêm vào giỏ hàng
             </button>
           </div>
           <div class="col-lg-12"></div>

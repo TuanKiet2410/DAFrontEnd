@@ -10,6 +10,7 @@ import { KhoaHoc } from './khoa-hoc/khoa-hoc';
 import { Tailieu } from './tailieu/tailieu';
 import { Bookdetail } from './bookdetail/bookdetail';
 import { Cart } from './cart/cart';
+import { error } from 'node:console';
 
 export const routes: Routes = [
   { path: 'error', component: Eror },
@@ -24,6 +25,6 @@ export const routes: Routes = [
   {path:'book/:id', component:Bookdetail, title: "Book Detail"},
   {path:'cart', component:Cart},
   // Route mặc định hoặc các route khác
-  { path: '', redirectTo: '/error', pathMatch: 'full' },
+  { path: '', redirectTo: '/trang-chu', pathMatch: 'full' },
   { path: '**', component: Eror } // bắt tất cả các route không tồn tại
 ];
